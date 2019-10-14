@@ -1,0 +1,55 @@
+.Header{
+    height: 10vh;
+    background-color: rgb(31, 142, 250);
+}
+
+.header-contain{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.header-contain__1{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+.select-city{
+    background-color: rgb(31, 142, 250);
+}
+.select-city__icon{
+    width: 20px;
+}
+.select-city__cities{
+    -webkit-appearance: none;
+    color: white;
+    font-size: 20px;
+    border: none;
+    background-color: rgb(31, 142, 250);
+}
+.header-contain__2{
+    width:40%;
+    display: flex;
+    justify-content: space-between;
+}
+.main-links{
+    color: white;
+    font-family: Montserrat,Helvetica,sans-serif;
+    font-size: 17.8px;
+}
+.main-links:last-child{
+    /*border-right: 10px solid white;*/
+}
+.main-links:hover{
+    text-decoration: underline;
+    transform:  scaleX(1);
+}
+.button{
+    font-family: Montserrat,Helvetica,sans-serif;
+    background-color: rgb(31, 142, 250);
+    border-radius:10px;
+    border: 1px solid white;
+    color: white;
+    font-size: 20px;
+    width: 150px;
+
+}
