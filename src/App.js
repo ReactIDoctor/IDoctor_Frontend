@@ -1,9 +1,12 @@
 import React,{Component} from 'react';
 import {Switch, Route} from 'react-router-dom';
+
 import './App.scss';
+
 import LoginLayout from './app/login/LoginLayout';
-import Home from './components/pages/Home/Home';
 import Header from './components/shared/header/Header';
+import Footer from './components/shared/footer/Footer';
+import MainLayout from './app/main/MainLayout';
 
 export default class App extends Component {
   render (){
@@ -12,8 +15,10 @@ export default class App extends Component {
         <Header/>
         <Switch>
           <Route path="/auth" component = {LoginLayout}/>
-          <Route path="/home" component = {Home}/>
+          <Route path="/" component = {MainLayout}/>
         </Switch>
+
+        <Footer/>
       </div>
     );
   }

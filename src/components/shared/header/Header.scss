@@ -18,12 +18,14 @@
     background-color: rgb(31, 142, 250);
 }
 .select-city__icon{
-    width: 20px;
+    width: 10px;
 }
 .select-city__cities{
     -webkit-appearance: none;
     color: white;
-    font-size: 20px;
+    font-size: 12px;
+    font-family: Montserrat,Helvetica, sans-serif;
+    font-weight: 700;
     border: none;
     background-color: rgb(31, 142, 250);
 }
@@ -32,24 +34,33 @@
     display: flex;
     justify-content: space-between;
 }
-.main-links{
-    color: white;
-    font-family: Montserrat,Helvetica,sans-serif;
-    font-size: 17.8px;
+
+.Header__link{
+    text-decoration: none;
 }
 
-.main-links:hover{
-    text-decoration: underline;
-    transform:  scaleX(1);
-}
-.button{
+.main-link{
+    color: white;
     font-family: Montserrat,Helvetica,sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    text-decoration: none;
+
+    &:hover{
+        text-decoration: underline;
+        transform:  scaleX(1);
+    }
+}
+
+.login{
+    font-size: 12px;
+    font-family: Montserrat,Helvetica,sans-serif;
+    font-weight: 700;
     background-color: rgb(31, 142, 250);
     border-radius:20px;
-    border: 2px solid white;
-    color: white;
-    font-size: 20px;
-    height: 45px;
-    width: 150px;
-    margin-top: -15px;
+    border: 1px solid white;
+    color: #fff;
+    height: 35px;
+    width: 120px;
+    outline: none;
 }
