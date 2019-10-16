@@ -33,16 +33,16 @@ export default function Footer(){
                 <div className="footer--column">
                     <div className="footer--column__title">Мы в соц. сетях</div>
                     <div className="social--icons">
-                        <a  href="https://www.instagram.com/idoctor_kz/" target="_blank">
+                        <a  href="https://www.instagram.com/idoctor_kz/" target="_blank" rel="noopener noreferrer">
                             <img className="social--icons__item" src={instagram} alt="Instagram" />
                         </a>
-                        <a href="https://vk.com/idoctorkz1" target="_blank">
+                        <a href="https://vk.com/idoctorkz1" target="_blank" rel="noopener noreferrer">
                             <img  className="social--icons__item"  src={vk} alt="Vkontacte" />
                         </a>
-                        <a href="https://www.facebook.com/kz.idoctor" target="_blank">
+                        <a href="https://www.facebook.com/kz.idoctor" target="_blank" rel="noopener noreferrer">
                             <img  className="social--icons__item"  src={fb} alt="Facebook" />
                         </a>
-                        <a href="https://vk.com/idoctorkz1" target="_blank">
+                        <a href="https://vk.com/idoctorkz1" target="_blank" rel="noopener noreferrer">
                             <img  className="social--icons__item"  src={yb} alt="Youtube" />
                         </a>
                     </div>

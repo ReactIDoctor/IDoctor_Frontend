@@ -37,7 +37,7 @@ export default function Header(){
                 <NavLink className="Header__link" to="/">
                   <p className="main-link">РЕГИСТРАЦИЯ</p>
                 </NavLink>
-                <NavLink className="Header__link" to="/">
+                <NavLink className="Header__link" to="/auth">
                   <button className="login">ВОЙТИ</button>
                 </NavLink>
             </div>
