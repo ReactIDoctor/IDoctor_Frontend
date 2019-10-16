@@ -18,7 +18,7 @@ export default class App extends Component {
           <Route path="/" component = {MainLayout}/>
         </Switch>
 
-        <Footer/>
+        {/*<Footer/>*/}
       </div>
     );
   }
