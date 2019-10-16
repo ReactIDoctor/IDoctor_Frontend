@@ -34,7 +34,7 @@ export default function Header(){
                 <NavLink className="Header__link"  to="/">
                   <p className="main-link">СТАТЬИ</p>
                 </NavLink>
-                <NavLink className="Header__link" to="/">
+                <NavLink className="Header__link" to="/register">
                   <p className="main-link">РЕГИСТРАЦИЯ</p>
                 </NavLink>
                 <NavLink className="Header__link" to="/auth">
