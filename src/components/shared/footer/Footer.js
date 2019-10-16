@@ -1,9 +1,9 @@
 import React from 'react';
 import './Footer.scss';
-import instagram from "../../../assets/images/insta-icon.png";
-import vk from "../../../assets/images/vk-icon.jpg";
-import fb from "../../../assets/images/fb-icon.png";
-import yb from "../../../assets/images/yb-icon2.jpg";
+import instagram from "../../../assets/images/instagram.png";
+import vk from "../../../assets/images/vk.png";
+import fb from "../../../assets/images/facebook.png";
+import yb from "../../../assets/images/youtube.png";
 
 export default function Footer(){
     return(
