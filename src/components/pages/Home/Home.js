@@ -12,6 +12,7 @@ import network from '../../../assets/images/network.png';
 import comments from '../../../assets/images/comments.png';
 
 
+
 export default class Home extends Component {
     render(){
         return (
@@ -92,7 +93,87 @@ export default class Home extends Component {
                     </div>
 
                 </section>
+                
+
+                <section className="home--partnership">
+                    <div className="home--partnership__info">
+                        <h2 className="home--partnership__info-title">
+                            Хотите разместить анкету врача или клиники на сайте?
+                        </h2>
+
+                        <div className="home--partnership__info-steps">
+                            <div className="step">
+                                <img src="https://idoctor.kz/img/partner_step1.png" alt="" />
+                                <span>
+                                    Пройдите регистрацию в Личном кабинете
+                                </span>
+                            </div>
+
+                            <div className="step">
+                                <img src="https://idoctor.kz/img/partner_step2.png" alt="" />
+                                <span>
+                                    Загрузите подтверждающие документы
+                                </span>
+                            </div>
+
+                            <div className="step">
+                                <img src="https://idoctor.kz/img/partner_step3.png" alt=""/>
+                                <span>
+                                    Начинайте получать записи на прием - <br/> БЕСПЛАТНО
+                                </span>
+                            </div>
+
+
+                            <div className="step">
+                                <a className="btn" href="https://cabinet.idoctor.kz/register" rel="" >Разместить анкету</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div className="home--partnership__image">
+                        <img src="https://idoctor.kz/img/partnership.jpg"  alt=""/>
+
+                    </div>
+                </section>
+
+
+                <section className="home--partners">
+                    <h3 className="home--partners__title">Наши партнеры</h3>
+                    <div className="home--partners__list">
+                        <div className="home--partners__list-item">
+                            <img src="https://idoctor.kz/img/partner/1.jpg" alt="vox"/>
+                        </div>
+
+                        <div className="home--partners__list-item">
+                            <img src="https://idoctor.kz/img/partner/2.jpg" alt="vox"/>
+                        </div>
+
+                        <div className="home--partners__list-item">
+                            <img src="https://idoctor.kz/img/partner/3.jpg" alt="vox"/>
+                        </div>
+
+
+                        <div className="home--partners__list-item">
+                            <img src="https://idoctor.kz/img/partner/4.jpg" alt="vox"/>
+                        </div>
+
+                        <div className="home--partners__list-item">
+                            <img src="https://idoctor.kz/img/partner/5.jpg" alt="vox"/>
+                        </div>
+
+                        <div className="home--partners__list-item">
+                            <img src="https://idoctor.kz/img/partner/6.jpg" alt="vox"/>
+                        </div>
+
+                        <div className="home--partners__list-item">
+                            <img src="https://idoctor.kz/img/partner/7.jpg" alt="vox"/>
+                        </div>
+                    </div>
+                </section>
             </div> 
+            
         );
     }
 }

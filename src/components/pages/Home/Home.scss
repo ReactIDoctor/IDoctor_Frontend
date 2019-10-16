@@ -138,6 +138,10 @@
     padding:40px 25px;
     width:360px;
     height: 145px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .home--cards__item:first-child{
@@ -163,12 +167,118 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width:178px;
-    height: 100px;
+    justify-content: center;
 
 
     img{
         width:40px;
         height: 40px;
+        padding:20px;
+    }
+
+    span{
+        font-weight: 600;
+    }
+}
+
+.home--partners{
+    background-color: #fff;
+    padding:60px 80px;
+}
+
+.home--partners__title{
+    font-weight: 700;
+    font-size: 24px;
+    color: #001b36;
+    text-align: center;
+    padding:0px 0px 30px;
+}
+
+.home--partners__list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.home--partners__list-item{
+    margin:0px 0px 20px;
+    padding:0px 20px 0px 0px;
+}
+
+
+.home--partnership{
+    display: flex;
+    background-color: #1f8efa;
+}
+
+.home--partnership__info{
+    color:#fff;
+    font-size: 14px;
+    font-family: Montserrat,Helvetica,sans-serif;
+    padding:60px 20px 40px 80px;
+}
+
+.home--partnership__info-title{
+    font-size:28px;
+    font-family: Montserrat,Helvetica,sans-serif;
+    font-weight: 700;
+    line-height: normal;
+    width:50%;
+}
+
+.home--partnership__info-steps{
+    margin-top:60px;
+
+    .step{
+        font-weight: 500;
+        line-height: normal;
+        display: flex;
+        align-items: center;
+        position: relative;
+        
+        img{
+            max-width: 100%;
+        }
+
+        span{
+            font-size: 20px;
+            font-family: Montserrat,Helvetica,sans-serif;
+            font-weight: 600;
+        }
+
+        .btn{
+            display: inline-flex;
+            justify-content: center;
+            border:none;
+            border-radius: 4px;
+            padding:5px 40px;
+            height: 35px;
+            cursor: pointer;
+            font-size: 12px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-weight: 600;
+            box-sizing: border-box;
+            color:#001b36;
+            background-color: #dae2ec;
+            text-decoration: none;
+            align-items: center;
+        }
+    }
+}
+
+
+.home--partnership__image{
+    position: relative;
+    width:100%;
+    box-sizing: border-box;
+
+    img{
+        object-fit: cover;
+        position: absolute;
+        min-width: 100%;
+        min-height: 100%;
+        object-position: top;
+        display: block;
     }
 }
