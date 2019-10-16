@@ -1,0 +1,52 @@
+$path--rel: "../../../assets/images"; //images path
+
+
+.footer{
+  height: 38vh;
+  background-color: rgb(31, 142, 250);
+}
+.footer--row{
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+.footer--column{
+  display: block;
+}
+.footer--column__title{
+  color: rgb(10, 88, 163);
+  margin-bottom: 15px;
+  font-weight: 700;
+  width: 100%;
+}
+.footer--column__body{
+  color: white;
+  font-weight: 500;
+  padding-bottom: 10px;
+    &:hover{
+      text-decoration: underline;
+      transform:  scaleX(1);
+      visibility: visible;
+    }
+}
+.social--icons{
+  display: flex;
+}
+
+.social--icons__item{
+  width: 50px;
+}
+.footer--copyright{
+  text-align: center;
+  width: 100%;
+  margin-top: 30px;
+  padding-bottom: 10px;
+  font-size: 15px;
+}
+.footer--copyright__title{
+  margin-bottom: 5px;
+  color: white;
+}
+.footer--copyright__footer{
+  color: hsla(0,0%,100%,.6);
+}

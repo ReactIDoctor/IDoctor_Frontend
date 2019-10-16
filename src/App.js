@@ -12,7 +12,7 @@ export default class App extends Component {
   render (){
     return (
       <div>
-        <Header/>
+        {/*<Header/>*/}
         <Switch>
           <Route path="/auth" component = {LoginLayout}/>
           <Route path="/" component = {MainLayout}/>

@@ -13,8 +13,6 @@ export default function Header(){
               <NavLink className="logo" to="/">
                 <img src={logo} alt="logo"/>
               </NavLink>
-
-
               <div className="select-city">
                 <img className="select-city__icon" src={location} alt="location"/>
                 <select className="select-city__cities">
@@ -24,33 +22,25 @@ export default function Header(){
                   <option>АКТАУ</option>
                 </select>
               </div>
-
             </div>
-
 
             <div className="header-contain__2">
                 <NavLink className="Header__link"  to="/">
                   <p className="main-link">ВРАЧИ</p>
                 </NavLink>
-                
                 <NavLink className="Header__link" to="/">
                   <p className="main-link">МЕДЦЕНТРЫ</p>
                 </NavLink>
-
                 <NavLink className="Header__link"  to="/">
                   <p className="main-link">СТАТЬИ</p>
                 </NavLink>
-
                 <NavLink className="Header__link" to="/">
                   <p className="main-link">РЕГИСТРАЦИЯ</p>
                 </NavLink>
-
                 <NavLink className="Header__link" to="/">
                   <button className="login">ВОЙТИ</button>
                 </NavLink>
-
             </div>
-
           </div>
 
         </div>
