@@ -9,7 +9,7 @@ export default function MainLayout(){
         <div className="MainLayout">
 
             <Switch>
-                <Route exact path="/main" component={Home} />
+                <Route exact path="/" component={Home} />
             </Switch>
         </div>
     );
