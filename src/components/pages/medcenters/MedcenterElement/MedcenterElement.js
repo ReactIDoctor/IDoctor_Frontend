@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import './MedcenterElement.scss';
 import map from "../../../../assets/images/map-icon.png";
 import time from "../../../../assets/images/time-icon.png";
+import star from "../../../../assets/images/star-3-512.png";
+import review from "../../../../assets/images/review-icon.png";
 
 export default class MedcenterElement extends Component{
     render() {
@@ -15,8 +17,16 @@ export default class MedcenterElement extends Component{
                         <div className="logo">
                             <img className="logo-image" src={medcenter.img} alt="GasrtoClinic" />
                         </div>
-                        <div className="">
-
+                        <div className="star--rating">
+                            <img className="star-icon" src={star} alt="Star"/>
+                            <img className="star-icon" src={star} alt="Star"/>
+                            <img className="star-icon" src={star} alt="Star"/>
+                            <img className="star-icon" src={star} alt="Star"/>
+                            <img className="star-icon" src={star} alt="Star"/>0.00
+                        </div>
+                        <div className="review--rating">
+                            <img src={review} alt="Review" className="review-icon"/>
+                            {medcenter.star} отзывов
                         </div>
                     </div>
                     <div className="profile--right">

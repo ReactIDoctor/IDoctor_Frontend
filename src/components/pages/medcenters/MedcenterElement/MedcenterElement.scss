@@ -16,6 +16,24 @@
 
 .profile--left{
   display: block;
+  .star--rating{
+    display: flex;
+    font-weight: bold;
+    .star-icon{
+      width: 19px;
+      padding: 2px;
+    }
+  }
+  .review--rating{
+    display: flex;
+    color: #1f8efa;
+    margin-top: 20px;
+    .review-icon{
+      width: 20px;
+      padding-right: 10px;
+    }
+  }
+
 }
 
 .profile--right{

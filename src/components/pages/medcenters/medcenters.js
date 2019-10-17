@@ -17,7 +17,8 @@ export default class Medcenter extends Component{
                 location: "ул. Шолом Алейхем, д. 19",
                 time: "08:00 - 18:00",
                 review: "Отличный медцентр и услужливый персонал.",
-                img: "https://idoctor.kz/images/pvYKkfyT1dxsdJ1ajaCarUAdYimNJ0uMdG6icBmh_180x180.png"
+                img: "https://idoctor.kz/images/pvYKkfyT1dxsdJ1ajaCarUAdYimNJ0uMdG6icBmh_180x180.png",
+                star: 385
             },
             {
                 name: "Медицинский Центр \"Тау Сункар\" на Шаляпина\"",
@@ -27,7 +28,8 @@ export default class Medcenter extends Component{
                 location: "мкр. Айнабулак-1, 1а",
                 time: "08:00 - 18:00",
                 review: "Хорошая клиника.Меня все устраивает",
-                img: "https://idoctor.kz/images/medcenters/1/24/80XQMwlTyi17VrRKTJF0bvT63ZNyCZKACeBrNIX9.gif"
+                img: "https://idoctor.kz/images/medcenters/1/24/80XQMwlTyi17VrRKTJF0bvT63ZNyCZKACeBrNIX9.gif",
+                star: 114
             },
             {
                 name: "Медицинский центр \"РАДА\" на Торайгырова",
@@ -37,7 +39,8 @@ export default class Medcenter extends Component{
                 location: "ул.Торайгырова, 49/1",
                 time: "09:00 - 18:00",
                 review: "Удобный район, чистая клиника и самое главное вежливый персонал. Я считаю, что врачи в этой клинике- профессионалы",
-                img: "https://idoctor.kz/images/medcenters/1/108/B8KJLkMaR827exsBUwooaGj6zBpC1X2jAPEInmuT_180x180.png"
+                img: "https://idoctor.kz/images/medcenters/1/108/B8KJLkMaR827exsBUwooaGj6zBpC1X2jAPEInmuT_180x180.png",
+                star: 271
             },
             {
                 name: "Центральная семейная поликлиника г. Алматы",
@@ -47,7 +50,8 @@ export default class Medcenter extends Component{
                 location: "ул. Толе би, д. 249-249а, 1 этаж, Тастак 2",
                 time: "08:00 - 20:00 ",
                 review: "Здесь недавно, клиника нравится, запись без проблем, прием во время.",
-                img: "https://idoctor.kz/images/medcenters/1001/569/3pptrOVV42MPZmFmkARqLZBW7fMLaGWwswu3dhPn_180x180.png"
+                img: "https://idoctor.kz/images/medcenters/1001/569/3pptrOVV42MPZmFmkARqLZBW7fMLaGWwswu3dhPn_180x180.png",
+                star: 14
             },
             {
                 name: "Медицинский Центр \"Emirmed\"",
@@ -57,7 +61,8 @@ export default class Medcenter extends Component{
                 location: "ул. Манаса, 59 (уг. Жандосова)",
                 time: "00:00 - 00:00 ",
                 review: "Хорошая клиника. Все врачи добрые и отзывчивые",
-                img: "https://idoctor.kz/images/AoYyPMH179N7tp6NxO3CqBp5MyKfQd4NWNZJehMH_180x180.png"
+                img: "https://idoctor.kz/images/AoYyPMH179N7tp6NxO3CqBp5MyKfQd4NWNZJehMH_180x180.png",
+                star: 231
             },
             {
                 name: "Медицинский Центр \"Авторская Медицина\"",
@@ -67,7 +72,8 @@ export default class Medcenter extends Component{
                 location: "ул. Карасай батыра, 152 (уг. Нурмакова)",
                 time: "09:00 - 17:00",
                 review: "Не так давно я обратилась за помощью к Зинаиде Григорьевне и ни капли не пожалела. Я люблю когда все чётко и по делу, в наше время к",
-                img: "https://idoctor.kz/images/medcenters/1/96/JI9qOrf1TuzAfCCStsGtelSEYEWge83ZjkhdvvyO_180x180.png"
+                img: "https://idoctor.kz/images/medcenters/1/96/JI9qOrf1TuzAfCCStsGtelSEYEWge83ZjkhdvvyO_180x180.png",
+                star: 5
             },
             {
                 name: "Медицинский центр \"АМИТРУД ДАРИГА\" на Казыбек би",
@@ -77,7 +83,8 @@ export default class Medcenter extends Component{
                 location: "ул. Казыбек би, 20Б",
                 time: "08:00 - 17:00 ",
                 review: "Хорошая клиника. Есть парковка. Есть оплата безнал. Удобно расположен. Есть стационар и врачи все доценты, К.М.Н. и профессора.",
-                img: "https://idoctor.kz/images/optimized/shH21wfoVRyQQfvElms0R5V2bFf18DDH4zL7hdnn_180x180-q-85.jpeg"
+                img: "https://idoctor.kz/images/optimized/shH21wfoVRyQQfvElms0R5V2bFf18DDH4zL7hdnn_180x180-q-85.jpeg",
+                star: 1
             },
             {
                 name: "Городской центр репродукции человека",
@@ -87,7 +94,8 @@ export default class Medcenter extends Component{
                 location: "ул. Жибек-Жолы, 124",
                 time: "08:00 - 19:00",
                 review: "Врач Опара Н В 💪🏻👍🏻",
-                img: "https://idoctor.kz/images/0F0zcwU3viF8msvH95KEZTEn4PbIY5f7iVQXdb5y.gif"
+                img: "https://idoctor.kz/images/0F0zcwU3viF8msvH95KEZTEn4PbIY5f7iVQXdb5y.gif",
+                star: 1
             },
             {
                 name: "Медицинский Центр \"Тау Сункар\" на Розыбакиева",
@@ -97,7 +105,8 @@ export default class Medcenter extends Component{
                 location: "",
                 time: "09:00 - 17:00",
                 review: "Врач от бога! Профессионал своего дела💪",
-                img: "https://idoctor.kz/images/medcenters/1/295/DkBwbxH5yJZib5cLb9rNJv3BGFdDv4TVlxBCW7FC.gif"
+                img: "https://idoctor.kz/images/medcenters/1/295/DkBwbxH5yJZib5cLb9rNJv3BGFdDv4TVlxBCW7FC.gif",
+                star: 1
             }
         ];
 
