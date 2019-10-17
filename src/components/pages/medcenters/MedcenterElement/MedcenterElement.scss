@@ -1,0 +1,121 @@
+.MedcenterElement{
+  width: 85%;
+  height: 47vh;
+  margin:50px auto;
+  box-shadow: 0 2px 20px rgba(43,46,56,.2);
+  border-radius: 10px;
+  display: flex;
+}
+.profile{
+  display: flex;
+  width: 60%;
+  justify-content: space-around;
+  padding-top: 10px;
+  border-right: 1px solid #dae2ec;
+}
+
+.profile--left{
+  display: block;
+}
+
+.profile--right{
+  width: 69%;
+}
+
+.logo{
+  width: 160px;
+  border-radius:200px ;
+  z-index: 1;
+  .logo-image{
+    margin-top: 40px;
+    width: 150px;
+  }
+}
+
+.profile--basic__title{
+  h2{
+    font-size: 22px;
+    font-weight: 600;
+  }
+}
+
+.skills--list{
+  font-size: 15px;
+  line-height: 15px;
+  color: #919bab;
+  margin-top: 30px;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
+.profile--info__row{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  padding-top: 20px;
+}
+
+.profile--review{
+  margin-top: 20px;
+  height: 40px;
+  width: 100%;
+  background-color: #f6f9fc;
+  border-radius: 5px;
+}
+
+.profile--review__title{
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 13px;
+  color: #1f8efa;
+}
+
+.profile--additional{
+  display: block;
+  width: 40%;
+
+}
+
+.profile--additional__block{
+  display: block;
+  width: 100%;
+  margin-top:100px;
+}
+
+.profile--additional_{
+  margin: 30px auto;
+  height: 40px;
+  width: 90%;
+  text-align: center;
+  border-radius: 20px;
+  .profile--additional__title{
+    padding: 3px;
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .price__title{
+    color: #fff;
+  }
+}
+
+.__price{
+  background-color: #1f8efa;
+}
+
+.__row{
+  border: 1px solid gray;
+}
+
+.row__title{
+  color: black;
+}
+
+.img-map{
+  width: 17px;
+  padding-right: 10px;
+}

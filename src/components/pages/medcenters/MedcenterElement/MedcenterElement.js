@@ -1,0 +1,62 @@
+import React, {Component} from 'react';
+import './MedcenterElement.scss';
+import map from "../../../../assets/images/map-icon.png";
+import time from "../../../../assets/images/time-icon.png";
+
+export default class MedcenterElement extends Component{
+    render() {
+        const {medcenter}=this.props;
+        console.log(medcenter);
+        return(
+
+            <div className="MedcenterElement">
+                <div className="profile">
+                    <div className="profile--left">
+                        <div className="logo">
+                            <img className="logo-image" src={medcenter.img} alt="GasrtoClinic" />
+                        </div>
+                        <div className="">
+
+                        </div>
+                    </div>
+                    <div className="profile--right">
+                        <div className="profile--basic__title">
+                            <h2>  {medcenter.name}</h2>
+                        </div>
+                        <div className="skills--list">
+                            {medcenter.skills.map((el, i)=> (el +'/'))}
+                        </div>
+                        <div className="profile--info__address">
+                            <div className="profile--info__row">
+                                <img src={map} alt="Location" className="img-map"/>
+                                {medcenter.location}
+                            </div>
+                            <div className="profile--info__row">
+                                <img src={time} alt="Location" className="img-map"/>
+                                {medcenter.time}
+                            </div>
+                            <div className="profile--info__row profile--review">
+                                <span className="profile--review__title">Отзыв:</span>
+                            {medcenter.review}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="profile--additional">
+                    <div className="profile--additional__block">
+                        <div className="profile--additional_ __price">
+                            <a className="profile--additional__title price__title" href="https://idoctor.kz/almaty/medcenter/509-meditsinskiy-tsentr-gastroclinic">
+                                Подробнее
+                            </a>
+                        </div>
+                        <div className="profile--additional_ __row">
+                            <a className="profile--additional__title row__title" href="https://idoctor.kz/almaty/medcenter/509-meditsinskiy-tsentr-gastroclinic">
+                                Показать номер
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        );
+    }
+}
