@@ -93,7 +93,37 @@ export default class Home extends Component {
                     </div>
 
                 </section>
-                
+
+                <section className="home--skills">
+                    <div className="home--title">
+                        Быть здоровым - просто!
+                    </div>
+
+                    <div className="home--subtitle">
+                        Мы поможем найти проверенного врача и записаться на прием в удобное для Вас время
+                    </div>
+
+                    <div className="home--skills__content">
+                        <div className="container">
+                            <div className="wrapper">
+                                <div className="home--skills__content-column">
+                                    <div className="home--skills__content-column__item">
+                                        <a href="https://idoctor.kz/almaty/doctors/nevrolog">
+                                            <img className="circled" alt="Невролог" src="https://idoctor.kz/almaty/img/skills/nevrolog_140x140.png"/>
+                                        </a>
+                                        <div className="home--skills__content-column__item-info">
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                </section>                
 
                 <section className="home--partnership">
                     <div className="home--partnership__info">
