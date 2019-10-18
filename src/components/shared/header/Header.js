@@ -25,7 +25,7 @@ export default function Header(){
             </div>
 
             <div className="header-contain__2">
-                <NavLink className="Header__link"  to="/">
+                <NavLink className="Header__link"  to="/doctors">
                   <p className="main-link">ВРАЧИ</p>
                 </NavLink>
                 <NavLink className="Header__link" to="/medcenters">

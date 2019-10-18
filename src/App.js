@@ -9,6 +9,8 @@ import Footer from './components/shared/footer/Footer';
 import MainLayout from './app/main/MainLayout';
 import RegistrationLayout from "./app/registration/RegistrationLayout";
 import Medcenter from "./components/pages/medcenters/medcenters";
+import Doctors from "./components/pages/doctors/doctors";
+
 export default class App extends Component {
   render (){
     return (
@@ -18,6 +20,7 @@ export default class App extends Component {
           <Route path="/auth" component = {LoginLayout}/>
             <Route path="/register"  component={RegistrationLayout}/>
             <Route path="/medcenters" component={Medcenter} />
+            <Route path="/doctors" component={Doctors} />
             <Route path="/" component = {MainLayout}/>
         </Switch>
 

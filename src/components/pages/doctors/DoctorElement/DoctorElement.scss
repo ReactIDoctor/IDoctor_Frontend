@@ -1,0 +1,74 @@
+.DoctorElement{
+  float: left;
+  width: 92%;
+  height: 47vh;
+  margin:50px auto;
+  box-shadow: 0 2px 20px rgba(43,46,56,.2);
+  border-radius: 10px;
+  display: flex;
+}
+.doctor-profile{
+  width: 90%;
+  border-right: none;
+  margin: 0 auto;
+}
+.doctor-profile--info__row{
+  font-size: 17px;
+  padding: 15px 0;
+}
+.doctor-medcenter{
+  text-decoration: none;
+  font-size: 20px;
+  color: #1f8efa;
+  line-height: 22px;
+}
+.profile--info__row-title{
+  font-size: 20px;
+  margin-right: 10px;
+  //margin-bottom: 0;
+  //white-space: nowrap;
+  line-height: 18px;
+}
+.doctor-star-icon{
+  width: 28px;
+  //padding: 0px;
+}
+
+.hotspots{
+  display: flex;
+  color: #001b36;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 5px 10px;
+  font-family: Montserrat,Helvetica,sans-serif;
+  text-transform: uppercase;
+  margin: 20px 0;
+  .hotspot--grey{
+    background-color: #f3f5f7;
+    border-radius: 5px;
+    padding: 5px 10px;
+  }
+  .hotspot--white{
+    border-radius: 5px;
+    border: 1px solid #ededed;
+    padding: 5px 10px;
+    margin-left: 10px;
+  }
+}
+.doctor--price{
+  display: block;
+  margin: auto 0;
+  .doctor--price__title{
+    color: #343b4c;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
+  .doctor--price__tag{
+    color: #06d09e;
+    font-weight: 500;
+    font-size: 25px;
+  }
+
+}

@@ -33,10 +33,10 @@
       padding-right: 10px;
     }
   }
-
 }
 
 .profile--right{
+  margin-left: 40px;
   width: 69%;
 }
 
@@ -46,6 +46,7 @@
   z-index: 1;
   .logo-image{
     margin-top: 40px;
+    border-radius: 100px;
     width: 150px;
   }
 }

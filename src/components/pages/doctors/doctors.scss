@@ -1,0 +1,77 @@
+.Doctors{
+  background-color: #fafbfd;
+}
+.filter--input{
+  height: 35px;
+  width: 200px;
+  border-radius: 30px;
+  padding: 5px;
+  font-size: 20px;
+  background-color: #fff;
+  border-color: #c3cdd8;
+}
+.doctor-search--head{
+  justify-content: space-between;
+}
+.doctor-main{
+  display: flex;
+}
+
+.main--left{
+  width: 30%;
+}
+
+.main--right{
+  width: 70%;
+}
+.doctor-filter{
+  margin-top: 10px;
+}
+.doctor-info__title{
+  font-size: 19px;
+  padding: 0;
+}
+.card{
+  box-shadow: 0 2px 6px rgba(47,83,151,.1);
+  border-radius: 6px;
+  background-color: white;
+  padding: 20px 15px;
+  margin-bottom: 10px;
+  width: 70%;
+  margin: 40px auto;
+
+}
+.search--filters__item{
+  color: #919bab;
+  display: block;
+}
+.search--filters__item-title{
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 20px;
+}
+.search--filters__item-input{
+  border-radius: 30px;
+  border: 1px solid #c3cdd8;
+  height: 30px;
+  width: 90%;
+  padding: 10px;
+  font-size: 17px;
+}
+.search--filters__item-body{
+  color: #343b4c;
+  font-size: 17px;
+  font-weight: 700;
+}
+.flexbox{
+  margin: 20px 0;
+}
+.flexbox-input{
+  height: 30px;
+  width: 100px;
+  font-weight: 500;
+  border-radius: 5px;
+  border: 1px solid #c3cdd8;
+  padding: 10px;
+  background-color: #fff;
+}

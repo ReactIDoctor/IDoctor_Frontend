@@ -1,15 +1,13 @@
 import React, {Component} from 'react';
 import './medcenters.scss';
-import './information';
 import MedcenterElement from "./MedcenterElement/MedcenterElement";
-// import information from "./information";
-
 
 export default class Medcenter extends Component{
 
     render() {
         let information = [
             {
+                id: 1,
                 name: "Медицинский центр \"Gastroclinic\"",
                 skills: [
                     "Медицинский центр ", " Многопрофильная клиника"
@@ -21,6 +19,7 @@ export default class Medcenter extends Component{
                 star: 385
             },
             {
+                id:2,
                 name: "Медицинский Центр \"Тау Сункар\" на Шаляпина\"",
                 skills: [
                     "Медицинский центр ", " Многопрофильная клиника ", "Стоматология "
@@ -32,6 +31,7 @@ export default class Medcenter extends Component{
                 star: 114
             },
             {
+                id:3,
                 name: "Медицинский центр \"РАДА\" на Торайгырова",
                 skills: [
                     "Медицинский центр ", " Многопрофильная клиника ", "Травмпункт "
@@ -43,6 +43,7 @@ export default class Medcenter extends Component{
                 star: 271
             },
             {
+                id:4,
                 name: "Центральная семейная поликлиника г. Алматы",
                 skills: [
                     "Поликлиника", " Центр семейного здоровья", " Глазная клиника"
@@ -54,6 +55,7 @@ export default class Medcenter extends Component{
                 star: 14
             },
             {
+                id:5,
                 name: "Медицинский Центр \"Emirmed\"",
                 skills: [
                     "Медицинский центр ", " Многопрофильная клиника ", " Глазная клиника"
@@ -65,6 +67,7 @@ export default class Medcenter extends Component{
                 star: 231
             },
             {
+                id:6,
                 name: "Медицинский Центр \"Авторская Медицина\"",
                 skills: [
                     "Травмпункт ", " Глазная клиника"
@@ -76,6 +79,7 @@ export default class Medcenter extends Component{
                 star: 5
             },
             {
+                id:7,
                 name: "Медицинский центр \"АМИТРУД ДАРИГА\" на Казыбек би",
                 skills: [
                     " Медицинский центр", "Многопрофильная клиника "
@@ -87,6 +91,7 @@ export default class Medcenter extends Component{
                 star: 1
             },
             {
+                id:8,
                 name: "Городской центр репродукции человека",
                 skills: [
                     "Центр планирования семьи", "Мужское и женское здоровье "
@@ -98,6 +103,7 @@ export default class Medcenter extends Component{
                 star: 1
             },
             {
+                id:9,
                 name: "Медицинский Центр \"Тау Сункар\" на Розыбакиева",
                 skills: [
                     "Медицинский центр", "Многопрофильная клиника"
@@ -115,7 +121,7 @@ export default class Medcenter extends Component{
                 <div className="breadcrumbs">
                     <a href="/" className="breadcrumbs-item">Главная/</a>
                     <a href="/medcenters" className="breadcrumbs-item">Медцентры в Алматы/</a>
-                    <a className="breadcrumbs-item bold">Клиники в Казахстане </a>
+                    <div href="" className="breadcrumbs-item bold">Клиники в Казахстане </div>
                 </div>
 
                 <div className="main">
@@ -125,7 +131,7 @@ export default class Medcenter extends Component{
                             <div className="search--head__info"> {information.length} медцентров</div>
                         </div>
                         <div className="search--head__filter">
-                            <img className="filter-icon" src="https://cdn.iconscout.com/icon/premium/png-512-thumb/filter-192-1133964.png"/>
+                            <img className="filter-icon" alt="Filter" src="https://cdn.iconscout.com/icon/premium/png-512-thumb/filter-192-1133964.png"/>
                             Фильтры
                         </div>
                     </div>
@@ -137,12 +143,10 @@ export default class Medcenter extends Component{
                                     index={index}
                                     medcenter={medcenter}
                                 />
-
                             ))
                         }
                     </div>
                 </div>
-
             </div>
         );
     }

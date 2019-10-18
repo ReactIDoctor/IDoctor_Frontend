@@ -1,14 +1,42 @@
 import React, {Component} from 'react';
 import './MedcenterElement.scss';
+
+import {withRouter} from 'react-router-dom';
+
 import map from "../../../../assets/images/map-icon.png";
 import time from "../../../../assets/images/time-icon.png";
 import star from "../../../../assets/images/star-3-512.png";
 import review from "../../../../assets/images/review-icon.png";
 
 export default class MedcenterElement extends Component{
+
+    constructor(props){
+        super(props);
+        this.state = {
+            medcenter: {}
+        }
+    }
+    openDetailPage = () => {
+        // this.props.history.replace("/auth")
+        console.log(this.props.medcenter);
+    }
+
+    componentDidMount() {
+        // console.log(this.props);
+        this.setState({medcenter: this.props.medcenter });
+        console.log(this.state.medcenter);
+    }
+    componentDidUpdate(prevProps){
+        // to avoid infinite loop, set state in condition
+        if( this.props.medcenter !== prevProps.medcenter ){
+            this.setState({medcenter: this.props.medcenter})
+        }
+    }
+
+
     render() {
         const {medcenter}=this.props;
-        console.log(medcenter);
+        // console.log(medcenter);
         return(
 
             <div className="MedcenterElement">
@@ -31,7 +59,7 @@ export default class MedcenterElement extends Component{
                     </div>
                     <div className="profile--right">
                         <div className="profile--basic__title">
-                            <h2>  {medcenter.name}</h2>
+                            <h2 >  {medcenter.name}</h2>
                         </div>
                         <div className="skills--list">
                             {medcenter.skills.map((el, i)=> (el +'/'))}
@@ -54,10 +82,10 @@ export default class MedcenterElement extends Component{
                 </div>
                 <div className="profile--additional">
                     <div className="profile--additional__block">
-                        <div className="profile--additional_ __price">
-                            <a className="profile--additional__title price__title" href="https://idoctor.kz/almaty/medcenter/509-meditsinskiy-tsentr-gastroclinic">
+                        <div onClick={this.openDetailPage}className="profile--additional_ __price">
+                            <div  className="profile--additional__title price__title" >
                                 Подробнее
-                            </a>
+                            </div>
                         </div>
                         <div className="profile--additional_ __row">
                             <a className="profile--additional__title row__title" href="https://idoctor.kz/almaty/medcenter/509-meditsinskiy-tsentr-gastroclinic">
@@ -70,3 +98,4 @@ export default class MedcenterElement extends Component{
         );
     }
 }
+
