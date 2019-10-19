@@ -31,7 +31,7 @@ export default class LoginLayout extends Component{
         this.setState({...newValue})
     }
     onSubmit = event =>{
-        event.preventDefault();
+        // event.preventDefault();
         const {phone, password} = this.state;
         for(let i=0; i<this.state.users.length; i++){
             if(this.state.users[i].phone === phone && this.state.users[i].password === password){
@@ -40,7 +40,7 @@ export default class LoginLayout extends Component{
                 this.props.history.push("/");
             }
             else{
-                alert("wrong");
+                // alert("wrong");
             }
             console.log(this.state.users[i])
         }

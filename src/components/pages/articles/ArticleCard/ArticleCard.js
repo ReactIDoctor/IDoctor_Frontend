@@ -5,8 +5,8 @@ import Example from "../forHooks";
 export default class ArticleCard extends Component {
     render() {
         const {article} = this.props;
-        return(
 
+        return(
             <div className="ArticleCard">
                 {/*<Example></Example>*/}
                 <div className="article-image"><img className="img-logo" src={article.img} /></div>
