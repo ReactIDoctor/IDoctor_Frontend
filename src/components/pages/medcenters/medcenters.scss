@@ -1,0 +1,53 @@
+.Medcenter{
+  display: block;
+}
+.breadcrumbs{
+  display: flex;
+  padding: 12px 0;
+  background: #f6f9fc;
+  box-shadow: 0 1px 0 #e0e2e4;
+  z-index: 3;
+  position: relative;
+  padding-left: 170px;
+  .breadcrumbs-item{
+    color: #6b7c93;
+    font-weight: 400;
+    font-size: 15px;
+    text-decoration: none;
+  }
+  .bold{
+    font-weight: bold;
+
+  }
+}
+
+.search--head{
+  display: flex;
+  justify-content: space-around;
+}
+.search--head__title{
+  display: flex;
+  color: #343b4c;
+  h1 {
+    font-weight: 700;
+    font-size: 28px;
+  }
+}
+
+.search--head__info {
+  padding: 30px 15px;
+  font-size: 12px;
+  color: #919bab;
+}
+.search--head__filter{
+  font-size: 20px;
+  line-height: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 30px;
+  cursor: pointer;
+  color: #1f8efa;
+}
+.filter-icon{
+  width: 20px;
+}

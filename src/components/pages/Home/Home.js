@@ -106,15 +106,165 @@ export default class Home extends Component {
                     <div className="home--skills__content">
                         <div className="container">
                             <div className="wrapper">
-                                <div className="home--skills__content-column">
+                                <div className="home--skills__content-column slide">
                                     <div className="home--skills__content-column__item">
                                         <a href="https://idoctor.kz/almaty/doctors/nevrolog">
-                                            <img className="circled" alt="Невролог" src="https://idoctor.kz/almaty/img/skills/nevrolog_140x140.png"/>
+                                            <img className="circled" alt="Невролог" src="https://idoctor.kz/img/skills/nevrolog_140x140.png"/>
                                         </a>
                                         <div className="home--skills__content-column__item-info">
-
+                                            <a href="/"> Невролог</a>
+                                            
                                         </div>
                                     </div>
+
+                                    <div className="home--skills__content-column__item">
+                                        <a href="https://idoctor.kz/almaty/doctors/nevrolog">
+                                            <img className="circled" alt="Невролог" src="https://idoctor.kz/img/skills/nevrolog_140x140.png"/>
+                                        </a>
+                                        <div className="home--skills__content-column__item-info">
+                                            <a href="/"> Невролог</a>
+                                            
+                                        </div>
+                                    </div>
+
+                                    <div className="home--skills__content-column__item">
+                                        <a href="https://idoctor.kz/almaty/doctors/nevrolog">
+                                            <img className="circled" alt="Невролог" src="https://idoctor.kz/img/skills/dermatolog_140x140.png"/>
+                                        </a>
+                                        <div className="home--skills__content-column__item-info">
+                                            <a href="/"> Дерматолог</a>
+                                            
+                                        </div>
+                                    </div>
+
+                                    <div className="home--skills__content-column__item">
+                                        <a href="https://idoctor.kz/almaty/doctors/nevrolog">
+                                            <img className="circled" alt="Невролог" src="https://idoctor.kz/img/skills/gastroenterolog_140x140.png"/>
+                                        </a>
+                                        <div className="home--skills__content-column__item-info">
+                                            <a href="/"> Гастроэнтеролог</a>
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                    <div className="home--skills__content-column__item">
+                                        <a href="https://idoctor.kz/almaty/doctors/nevrolog">
+                                            <img className="circled" alt="Невролог" src="https://idoctor.kz/img/skills/urolog_140x140.png"/>
+                                        </a>
+                                        <div className="home--skills__content-column__item-info">
+                                            <a href="/"> Уролог</a>
+                                            
+                                        </div>
+                                    </div>
+
+                                   
+                                </div>
+                                
+                                <div className="home--skills__content-column slide">
+                                    <div className="home--skills__content-column__item">
+                                        <a href="https://idoctor.kz/almaty/doctors/nevrolog">
+                                            <img className="circled" alt="Невролог" src="https://idoctor.kz/img/skills/lor-otorinolaringolog_140x140.png"/>
+                                        </a>
+                                        <div className="home--skills__content-column__item-info">
+                                            <a href="/"> ЛОР (Оториноларинолог)</a>
+                                            
+                                        </div>
+                                    </div>
+
+                                    <div className="home--skills__content-column__item">
+                                        <a href="https://idoctor.kz/almaty/doctors/nevrolog">
+                                            <img className="circled" alt="Невролог" src="https://idoctor.kz/img/skills/nevrolog_140x140.png"/>
+                                        </a>
+                                        <div className="home--skills__content-column__item-info">
+                                            <a href="/"> Терапевт</a>
+                                            
+                                        </div>
+                                    </div>
+
+                                    <div className="home--skills__content-column__item">
+                                        <a href="https://idoctor.kz/almaty/doctors/nevrolog">
+                                            <img className="circled" alt="Невролог" src="https://idoctor.kz/img/skills/optimized/pulmonolog_140x140-q-85.jpg"/>
+                                        </a>
+                                        <div className="home--skills__content-column__item-info">
+                                            <a href="/"> Пульмонолог</a>
+                                            
+                                        </div>
+                                    </div>
+
+                                    <div className="home--skills__content-column__item">
+                                        <a href="https://idoctor.kz/almaty/doctors/nevrolog">
+                                            <img className="circled" alt="Невролог" src="https://idoctor.kz/img/skills/optimized/ortoped_140x140-q-85.jpg"/>
+                                        </a>
+                                        <div className="home--skills__content-column__item-info">
+                                            <a href="/"> Ортопед</a>
+                                            
+                                        </div>
+                                    </div>
+                                    
+
+                                    <div className="home--skills__content-column__item">
+                                        <a href="https://idoctor.kz/almaty/doctors/nevrolog">
+                                            <img className="circled" alt="Невролог" src="https://idoctor.kz/img/skills/oftalmolog-okulist_140x140.png"/>
+                                        </a>
+                                        <div className="home--skills__content-column__item-info">
+                                            <a href="/"> Офтальмолог (окулист)</a>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="home--skills__content-column slide">
+                                    <div className="home--skills__content-column__item">
+                                        <a href="https://idoctor.kz/almaty/doctors/nevrolog">
+                                            <img className="circled" alt="Невролог" src="https://idoctor.kz/img/skills/osteopat_140x140.png"/>
+                                        </a>
+                                        <div className="home--skills__content-column__item-info">
+                                            <a href="/"> Остеопат</a>
+                                            
+                                        </div>
+                                    </div>
+
+                                    <div className="home--skills__content-column__item">
+                                        <a href="https://idoctor.kz/almaty/doctors/nevrolog">
+                                            <img className="circled" alt="Невролог" src="https://idoctor.kz/img/skills/proktolog_140x140.png"/>
+                                        </a>
+                                        <div className="home--skills__content-column__item-info">
+                                            <a href="/"> Проктолог</a>
+                                            
+                                        </div>
+                                    </div>
+
+                                    <div className="home--skills__content-column__item">
+                                        <a href="https://idoctor.kz/almaty/doctors/nevrolog">
+                                            <img className="circled" alt="Невролог" src="https://idoctor.kz/img/skills/gematolog_140x140.png"/>
+                                        </a>
+                                        <div className="home--skills__content-column__item-info">
+                                            <a href="/"> Гематолог</a>
+                                            
+                                        </div>
+                                    </div>
+
+                                    <div className="home--skills__content-column__item">
+                                        <a href="https://idoctor.kz/almaty/doctors/nevrolog">
+                                            <img className="circled" alt="Невролог" src="https://idoctor.kz/img/skills/optimized/trikholog_140x140-q-85.jpg"/>
+                                        </a>
+                                        <div className="home--skills__content-column__item-info">
+                                            <a href="/"> Трихолог</a>
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                    <div className="home--skills__content-column__item">
+                                        <a href="https://idoctor.kz/almaty/doctors/nevrolog">
+                                            <img className="circled" alt="Невролог" src="https://idoctor.kz/img/skills/optimized/endokrinolog_140x140-q-85.jpg"/>
+                                        </a>
+                                        <div className="home--skills__content-column__item-info">
+                                            <a href="/"> Эндокринолог</a>
+                                            
+                                        </div>
+                                    </div>
+
+                                
                                 </div>
 
                                 
@@ -155,7 +305,7 @@ export default class Home extends Component {
 
 
                             <div className="step">
-                                <a className="btn" href="https://cabinet.idoctor.kz/register" rel="" >Разместить анкету</a>
+                                <a className="btn" href="/register" rel="" >Разместить анкету</a>
                             </div>
 
                         </div>
