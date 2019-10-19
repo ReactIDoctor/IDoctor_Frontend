@@ -4,7 +4,49 @@ import './LoginLayout.scss'
 import desktop from "../../assets/images/desktop.png";
 import auth_img from "../../assets/images/auth_img.png";
 
-export default class LoginLayout extends Component{ 
+export default class LoginLayout extends Component{
+    state = {
+        phone: "",
+        password: "",
+        users: [
+            {
+                phone: "87473651824",
+                password: "pass1"
+            },
+            {
+                phone: "87474698942",
+                password: "pass2"
+            }
+        ]
+    }
+    componentDidMount() {
+        const token = localStorage.getItem("token");
+        if(token === "123456789"){
+            this.props.history.push("/");
+        }
+    }
+    onInputChange = (event, name) => {
+        const newValue = {};
+        newValue[name] = event.target.value;
+        this.setState({...newValue})
+    }
+    onSubmit = event =>{
+        event.preventDefault();
+        const {phone, password} = this.state;
+        for(let i=0; i<this.state.users.length; i++){
+            if(this.state.users[i].phone === phone && this.state.users[i].password === password){
+                alert("right");
+                localStorage.setItem("token", "132456789");
+                this.props.history.push("/");
+            }
+            else{
+                alert("wrong");
+            }
+            console.log(this.state.users[i])
+        }
+        console.log(this.state);
+    }
+
     render() {
         return (
             <div className="LoginLayout">
@@ -26,18 +68,18 @@ export default class LoginLayout extends Component{
                                     <option>RUSS</option>
                                     <option>ENG</option>
                                 </select>
-                                <input type="text" className="form--input" />
+                                <input type="text" onChane={event => this.onInputChange(event, "phone")} className="form--input" />
                             </div>
                         </div>
                         <div className="form--item">
                             <label>Ваш пароль:</label>
                             <div className="vue-tel-input">
-                                <input type="password" className="form--input--pass" />
+                                <input type="password" onChane={event => this.onInputChange(event, "password")} className="form--input--pass" />
                             </div>
                         </div>
                         <div className="form--item">
                             <div className="vue-tel-input">
-                                <button className="button btn-login">Войти</button>
+                                <button type="submit" onClick={this.onSubmit} className="button btn-login">Войти</button>
                             </div>
                         </div>
                         <div className="form--item">

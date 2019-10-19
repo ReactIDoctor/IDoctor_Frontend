@@ -1,0 +1,41 @@
+.ArticleCard{
+  display: block;
+  width: 22%;
+  height: 500px;
+  box-shadow: 0 2px 20px rgba(43,46,56,.2);
+  margin-right: 1.5%;
+  margin-left: 1.5%;
+  margin-top: 40px;
+}
+.article-image{
+  width: 100%;
+  .img-logo{
+    width: 100%;
+  }
+}
+
+.article--title{
+  color: #333;
+  //position: absolute;
+  line-height: 32px;
+  font-size: 25px;
+  display: flex;
+  height: 270px;
+  .title--item{
+    margin: auto 30px;
+    &:hover{
+      color: #1f8efa;
+    }
+  }
+}
+.article--date{
+  border-top: 1px solid #919bab;
+  font-weight: 500;
+  line-height: 23px;
+  font-size: 12px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  margin-left: 30px;
+  margin-right: 17px;
+  color: #999;
+}

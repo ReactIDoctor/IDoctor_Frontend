@@ -33,7 +33,6 @@ export default class MedcenterElement extends Component{
         }
     }
 
-
     render() {
         const {medcenter}=this.props;
         // console.log(medcenter);
