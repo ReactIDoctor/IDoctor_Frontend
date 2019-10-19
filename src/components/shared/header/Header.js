@@ -31,7 +31,7 @@ export default function Header(){
                 <NavLink className="Header__link" to="/medcenters">
                   <p className="main-link">МЕДЦЕНТРЫ</p>
                 </NavLink>
-                <NavLink className="Header__link"  to="/">
+                <NavLink className="Header__link"  to="/articles">
                   <p className="main-link">СТАТЬИ</p>
                 </NavLink>
                 <NavLink className="Header__link" to="/register">

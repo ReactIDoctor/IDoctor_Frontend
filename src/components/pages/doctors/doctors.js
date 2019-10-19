@@ -5,8 +5,8 @@ import DoctortElement from "../doctors/DoctorElement/DoctorElement"
 
 export default class Doctors extends Component {
 
-    render() {
-        let information = [
+    state = {
+        doctors:[
             {
                 img: "https://idoctor.kz/images/optimized/xIZVEQRuvtCUYBQwYgO2pYTG4P9VHIaPlguq1L1M_300x300-q-85.jpeg",
                 name: "Иргайбаева Гульжахан Ахиновна",
@@ -84,8 +84,13 @@ export default class Doctors extends Component {
                 review: 8,
                 rating: 5.00,
                 price: 6000,
-            },
+            }
         ]
+    }
+
+    render() {
+        
+        let {doctors} = this.state;
 
         return (
             <div className="Doctors">
@@ -121,7 +126,7 @@ export default class Doctors extends Component {
                         <div className="search--head doctor-search--head">
                             <div className="search--head__title">
                                 <h1> Врачи-специалисты в Алматы</h1>
-                                <div className="search--head__info"> {information.length} врачей</div>
+                                <div className="search--head__info"> {doctors.length} врачей</div>
                             </div>
                             <div className="search--head__filter doctor-filter">
                                 <input placeholder="ФИО врача..." type="text" className="filter--input"/>
@@ -133,7 +138,7 @@ export default class Doctors extends Component {
                         </div>
                         <div className="search--list">
                             {
-                                information.map((doctor ,index)=> (
+                                doctors.map((doctor ,index)=> (
                                     <DoctortElement
                                         key={index}
                                         index={index}

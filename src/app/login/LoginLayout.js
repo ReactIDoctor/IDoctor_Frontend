@@ -17,6 +17,7 @@ export default class LoginLayout extends Component{
                     </div>
                 </div>
                 <div className="pages--fix__content">
+                    
                     <form className="form--inline-label">
                         <div className="form--item">
                             <label>Ваш телефон:</label>
@@ -60,6 +61,7 @@ export default class LoginLayout extends Component{
                         </div>
 
                     </form>
+                    
                 </div>
 
 

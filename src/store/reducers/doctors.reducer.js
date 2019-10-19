@@ -1,0 +1,19 @@
+import {GET_ALL_DOCTORS} from '../actions/doctors.actions';
+
+const initialState = {
+    doctors:[]
+};
+
+export default function(state = initialState, action) {
+    switch (action.type) {
+      case GET_ALL_DOCTORS:
+        return {
+          ...state,
+          doctors: action.payload
+        };
+  
+      default:
+        return state;
+    }
+}
+
