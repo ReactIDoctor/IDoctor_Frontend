@@ -69,13 +69,13 @@ export default class LoginLayout extends Component{
                                     <option>RUSS</option>
                                     <option>ENG</option>
                                 </select>
-                                <input type="text" onChane={event => this.onInputChange(event, "phone")} className="form--input" />
+                                <input type="text" onChange={event => this.onInputChange(event, "phone")} className="form--input" />
                             </div>
                         </div>
                         <div className="form--item">
                             <label>Ваш пароль:</label>
                             <div className="vue-tel-input">
-                                <input type="password" onChane={event => this.onInputChange(event, "password")} className="form--input--pass" />
+                                <input type="password" onChange={event => this.onInputChange(event, "password")} className="form--input--pass" />
                             </div>
                         </div>
                         <div className="form--item">
@@ -103,7 +103,7 @@ export default class LoginLayout extends Component{
                         </div>
 
                     </form>
-                    
+
                 </div>
 
 

@@ -2,7 +2,7 @@ import React from 'react';
 import {Switch,Route} from 'react-router-dom';
 
 
-import Home from '../../../src/components/pages/Home/Home';
+import Home from '../../../src/components/pages/home/Home';
 import Header from '../../components/shared/header/Header';
 import Footer from '../../components/shared/footer/Footer';
 import Medcenter from '../../components/pages/medcenters/medcenters';
@@ -17,7 +17,9 @@ export default function MainLayout(){
                 <Switch>
                     <Route path="/medcenters" component={Medcenter} />
                     <Route path="/doctors" component={Doctors} />
+                    <Route path="/articles" component={Articles}/>
                     <Route path="/" component={Home} />
+
                 </Switch>
             <Footer/>
         </div>
