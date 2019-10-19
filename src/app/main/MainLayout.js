@@ -5,7 +5,7 @@ import {Switch,Route} from 'react-router-dom';
 import Home from '../../../src/components/pages/Home/Home';
 import Header from '../../components/shared/header/Header';
 import Footer from '../../components/shared/footer/Footer';
-import Medcenter from "../../components/pages/medcenters/medcenters";
+import Medcenter from '../../components/pages/medcenters/medcenters';
 import Doctors from "../../components/pages/doctors/doctors";
 import Articles from "../../components/pages/articles/articles";
 
@@ -13,12 +13,12 @@ export default function MainLayout(){
     return(
         <div className="MainLayout">
             <Header/>
-            <Switch>
-                <Route exact path="/" component={Home} />
-                <Route path="/medcenters" component={Medcenter} />
-                <Route path="/doctors" component={Doctors} />
-                <Route path="/articles" component={Articles}/>
-            </Switch>
+
+                <Switch>
+                    <Route path="/medcenters" component={Medcenter} />
+                    <Route path="/doctors" component={Doctors} />
+                    <Route path="/" component={Home} />
+                </Switch>
             <Footer/>
         </div>
     );

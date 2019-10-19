@@ -4,8 +4,8 @@ import MedcenterElement from "./MedcenterElement/MedcenterElement";
 
 export default class Medcenter extends Component{
 
-    render() {
-        let information = [
+    state = {
+        medcenters:[
             {
                 id: 1,
                 name: "Медицинский центр \"Gastroclinic\"",
@@ -114,7 +114,12 @@ export default class Medcenter extends Component{
                 img: "https://idoctor.kz/images/medcenters/1/295/DkBwbxH5yJZib5cLb9rNJv3BGFdDv4TVlxBCW7FC.gif",
                 star: 1
             }
-        ];
+        ]
+    }
+
+    render() {
+
+        let {medcenters} = this.state;
 
         return (
             <div className="Medcenter">
@@ -128,7 +133,7 @@ export default class Medcenter extends Component{
                     <div className="search--head">
                         <div className="search--head__title">
                             <h1> Клиники в  Казахстане</h1>
-                            <div className="search--head__info"> {information.length} медцентров</div>
+                            <div className="search--head__info"> {medcenters.length} медцентров</div>
                         </div>
                         <div className="search--head__filter">
                             <img className="filter-icon" alt="Filter" src="https://cdn.iconscout.com/icon/premium/png-512-thumb/filter-192-1133964.png"/>
@@ -137,7 +142,7 @@ export default class Medcenter extends Component{
                     </div>
                     <div className="search--list">
                         {
-                            information.map((medcenter ,index)=> (
+                            medcenters.map((medcenter ,index)=> (
                                 <MedcenterElement
                                     key={index}
                                     index={index}
