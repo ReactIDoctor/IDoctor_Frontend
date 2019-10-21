@@ -1,10 +1,14 @@
 import React, {Component} from 'react';
 import './LoginLayout.scss'
 
+
+import { connect } from "react-redux";
+import { login } from "../../store/actions/auth.actions";
+
 import desktop from "../../assets/images/desktop.png";
 import auth_img from "../../assets/images/auth_img.png";
 
-export default class LoginLayout extends Component{
+class LoginLayout extends Component{
     state = {
         phone: "",
         password: "",
@@ -35,7 +39,7 @@ export default class LoginLayout extends Component{
         const {phone, password} = this.state;
         for(let i=0; i<this.state.users.length; i++){
             if(this.state.users[i].phone === phone && this.state.users[i].password === password){
-                alert("right");
+                // alert("right");
                 localStorage.setItem("token", "132456789");
                 this.props.history.push("/");
             }
@@ -111,3 +115,10 @@ export default class LoginLayout extends Component{
         );
     }
 }
+
+export default connect(
+    null,
+    { login }
+  )(LoginLayout);
+  
+  

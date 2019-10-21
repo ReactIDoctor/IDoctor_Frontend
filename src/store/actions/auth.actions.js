@@ -5,7 +5,7 @@ export const LOGIN = 'LOGIN';
 
 export const login = response => dispatch => {
     dispatch({
-        type: "LOGIN",
+        type: LOGIN,
         payload: response.data
     });
 };
