@@ -31,7 +31,7 @@ export default class LoginLayout extends Component{
         this.setState({...newValue})
     }
     onSubmit = event =>{
-        // event.preventDefault();
+        event.preventDefault();
         const {phone, password} = this.state;
         for(let i=0; i<this.state.users.length; i++){
             if(this.state.users[i].phone === phone && this.state.users[i].password === password){
@@ -39,12 +39,7 @@ export default class LoginLayout extends Component{
                 localStorage.setItem("token", "132456789");
                 this.props.history.push("/");
             }
-            else{
-                // alert("wrong");
-            }
-            console.log(this.state.users[i])
         }
-        console.log(this.state);
     }
 
     render() {
@@ -59,7 +54,7 @@ export default class LoginLayout extends Component{
                     </div>
                 </div>
                 <div className="pages--fix__content">
-                    
+
                     <form className="form--inline-label">
                         <div className="form--item">
                             <label>Ваш телефон:</label>
@@ -69,13 +64,13 @@ export default class LoginLayout extends Component{
                                     <option>RUSS</option>
                                     <option>ENG</option>
                                 </select>
-                                <input type="text" onChane={event => this.onInputChange(event, "phone")} className="form--input" />
+                                <input type="text" onChange={event => this.onInputChange(event, "phone")} className="form--input" />
                             </div>
                         </div>
                         <div className="form--item">
                             <label>Ваш пароль:</label>
                             <div className="vue-tel-input">
-                                <input type="password" onChane={event => this.onInputChange(event, "password")} className="form--input--pass" />
+                                <input type="password" onChange={event => this.onInputChange(event, "password")} className="form--input--pass" />
                             </div>
                         </div>
                         <div className="form--item">
@@ -103,7 +98,7 @@ export default class LoginLayout extends Component{
                         </div>
 
                     </form>
-                    
+
                 </div>
 
 

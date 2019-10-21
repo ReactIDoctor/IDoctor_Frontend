@@ -1,16 +1,11 @@
-import React, {Component} from 'react';
+import React from 'react';
 import './DoctorElement.scss'
 
 import star from "../../../../assets/images/star-full.png";
 import review from "../../../../assets/images/review-icon.png";
-// import map from "../../../../assets/images/map-icon.png";
-// import time from "../../../../assets/images/time-icon.png";
 
-
-
-export default class DoctorElement extends Component {
-    render() {
-        const {doctor}=this.props;
+export default function DoctorElement(props){
+        const {doctor}=props;
 
         return (
             <div className="DoctorElement">
@@ -68,5 +63,4 @@ export default class DoctorElement extends Component {
                 </div>
             </div>
         )
-    }
 }

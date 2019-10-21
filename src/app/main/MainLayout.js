@@ -8,6 +8,7 @@ import Footer from '../../components/shared/footer/Footer';
 import Medcenter from '../../components/pages/medcenters/medcenters';
 import Doctors from "../../components/pages/doctors/doctors";
 import Articles from "../../components/pages/articles/articles";
+import DetailPage from "../../components/pages/medcenters/MedcenterElement/DetailPage/DetailPage";
 
 export default function MainLayout(){
     return(
@@ -16,7 +17,9 @@ export default function MainLayout(){
 
                 <Switch>
                     <Route path="/medcenters" component={Medcenter} />
+                    <Route path="/articles" component={Articles} />
                     <Route path="/doctors" component={Doctors} />
+                    <Route path="/:id" component={DetailPage} />
                     <Route path="/" component={Home} />
                 </Switch>
             <Footer/>

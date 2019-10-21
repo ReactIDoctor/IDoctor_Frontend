@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './medcenters.scss';
+
 import MedcenterElement from "./MedcenterElement/MedcenterElement";
 
 export default class Medcenter extends Component{

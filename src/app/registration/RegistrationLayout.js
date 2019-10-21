@@ -6,6 +6,25 @@ import desktop from "../../assets/images/desktop.png";
 import auth_img from "../../assets/images/auth_img.png";
 
 export default class RegistrationLayout extends Component{
+    state = {
+        name: null,
+        phone: null,
+        password: null
+    }
+    handleChange = (e) => {
+        this.setState({
+            [e.target.id]: e.target.value
+        })
+    }
+    handleSubmit = (e) => {
+        e.preventDefault();
+        this.props.history.push("/");
+    }
+    componentDidUpdate() {
+        console.log(this.state);
+        console.log('component updated')
+    }
+
     render() {
         return (
             <div className="RegistrationLayout">
@@ -22,7 +41,7 @@ export default class RegistrationLayout extends Component{
                         <div className="form--item">
                             <label>Ваше имя:</label>
                             <div className="vue-tel-input">
-                                <input type="text" className="form--input-name" />
+                                <input type="text" id="name"onChange={this.handleChange} className="form--input-name" />
                             </div>
                         </div>
                         <div className="form--item">
@@ -33,18 +52,18 @@ export default class RegistrationLayout extends Component{
                                     <option>RUSS</option>
                                     <option>ENG</option>
                                 </select>
-                                <input type="text" className="form--input" />
+                                <input type="text" id="phone" onChange={this.handleChange}className="form--input" />
                             </div>
                         </div>
                         <div className="form--item">
                             <label>Придумайте пароль:</label>
                             <div className="vue-tel-input">
-                                <input type="password" className="form--input--pass" />
+                                <input type="password" id="password"onChange={this.handleChange} className="form--input--pass" />
                             </div>
                         </div>
                         <div className="form--item">
                             <div className="vue-tel-input">
-                                <button className="button btn-login">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+                                <button className="button btn-login" onClick={this.handleSubmit}>ЗАРЕГИСТРИРОВАТЬСЯ</button>
                             </div>
                         </div>
                         <div className="form--item to_reg">

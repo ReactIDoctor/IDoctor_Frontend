@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import './MedcenterElement.scss';
-
-// import {withRouter} from 'react-router-dom';
+import {Link} from "react-router-dom";
 
 import map from "../../../../assets/images/map-icon.png";
 import time from "../../../../assets/images/time-icon.png";
@@ -17,7 +16,6 @@ export default class MedcenterElement extends Component{
         }
     }
     openDetailPage = () => {
-        // this.props.history.replace("/auth")
         console.log(this.props.medcenter);
     }
 
@@ -82,9 +80,11 @@ export default class MedcenterElement extends Component{
                 <div className="profile--additional">
                     <div className="profile--additional__block">
                         <div onClick={this.openDetailPage}className="profile--additional_ __price">
-                            <div  className="profile--additional__title price__title" >
-                                Подробнее
-                            </div>
+                            <Link to={'/'+medcenter.id}>
+                                <div  className="profile--additional__title price__title" >
+                                    Подробнее
+                                </div>
+                            </Link>
                         </div>
                         <div className="profile--additional_ __row">
                             <a className="profile--additional__title row__title" href="https://idoctor.kz/almaty/medcenter/509-meditsinskiy-tsentr-gastroclinic">
