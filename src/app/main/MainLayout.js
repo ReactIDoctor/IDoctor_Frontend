@@ -18,7 +18,7 @@ export default function MainLayout(){
                     <Route path="/medcenters" component={Medcenter} />
                     <Route path="/articles" component={Articles} />
                     <Route path="/doctors" component={Doctors} />
-                    <Route path="/:id" component={DetailPage} />
+                    <Route path="/medcenter/:id" component={DetailPage} />
                     <Route path="/articles" component={Articles}/>
                     <Route path="/" component={Home} />
 
