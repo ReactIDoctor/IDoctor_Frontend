@@ -8,7 +8,7 @@ import {Link} from "react-router-dom";
 
 export default class DetailPage extends Component {
     state = {
-        id: null,
+        medcenter: null,
         medcenters:[
             {
                 id: 1,
@@ -125,9 +125,9 @@ export default class DetailPage extends Component {
     componentDidMount() {
         let medcenter_id = this.props.match.params.id;
         this.setState({
-            id: medcenter_id
+            medcenter: this.state.medcenters[medcenter_id-1]
         });
-        console.log(medcenter_id)
+        console.log(this.state.medcenter)
     }
     render() {
         const {medcenter} = this;
