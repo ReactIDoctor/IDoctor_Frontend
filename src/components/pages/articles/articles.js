@@ -54,6 +54,11 @@ class Articles extends Component {
         ]
     }
 
+    componentDidMount(){
+        // const {articles} = this.state;
+        this.props.getArticles();
+    }
+
     componentWillMount(){
         console.log("sda");
     }
@@ -88,7 +93,7 @@ class Articles extends Component {
 }
 
 const mapStateToProps = (state) => ({
-    articles: state.articles.articles,
+    articles: state.articles.getArticles,
   })
   
   

@@ -22,13 +22,17 @@ class LoginLayout extends Component{
                 password: "pass2"
             }
         ]
+
     }
     componentDidMount() {
+        // const {token} = this.props;
         const token = localStorage.getItem("token");
         if(token === "123456789"){
             this.props.history.push("/");
         }
     }
+
+    
     onInputChange = (event, name) => {
         const newValue = {};
         newValue[name] = event.target.value;
@@ -36,7 +40,9 @@ class LoginLayout extends Component{
     }
     onSubmit = event =>{
         event.preventDefault();
-        const {phone, password} = this.state;
+        const {login: phone, password} = this.state;
+        this.props.login(phone, password);
+
         for(let i=0; i<this.state.users.length; i++){
             if(this.state.users[i].phone === phone && this.state.users[i].password === password){
                 // alert("right");
@@ -80,6 +86,7 @@ class LoginLayout extends Component{
                         <div className="form--item">
                             <div className="vue-tel-input">
                                 <button type="submit" onClick={this.onSubmit} className="button btn-login">Войти</button>
+
                             </div>
                         </div>
                         <div className="form--item">
@@ -110,6 +117,7 @@ class LoginLayout extends Component{
         );
     }
 }
+
 
 export default connect(
     null,

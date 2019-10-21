@@ -21,6 +21,10 @@ class RegistrationLayout extends Component{
     }
     handleSubmit = (e) => {
         e.preventDefault();
+        const {authorize: name,phone, password} = this.state;
+        this.props.authorize(name,phone, password);
+
+
         this.props.history.push("/");
     }
     componentDidUpdate() {

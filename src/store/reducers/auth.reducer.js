@@ -1,7 +1,10 @@
 import {LOGIN, AUTH, LOG_OUT} from '../actions/auth.actions';
 
+const token = localStorage.getItem("access_token");
+const phone = token ? token.split(":")[0] : "";
+
 const initialState = {
-    username: '',
+    phone,
     status: ''
 };
   
@@ -10,7 +13,7 @@ export default function(state = initialState, action) {
       case LOGIN:
         return {
           ...state,
-          username: action.payload
+          phone: action.payload
         };
   
       case AUTH:
