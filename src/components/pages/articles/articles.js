@@ -53,8 +53,14 @@ class Articles extends Component {
             }
         ]
     }
+
+    componentWillMount(){
+        console.log("sda");
+    }
     
     render() {
+
+
         const {articles} = this.state;
 
         return (

@@ -1,7 +1,7 @@
 import React from 'react';
 import {Switch,Route} from 'react-router-dom';
 
-import Home from "../../components/pages/Home/Home";
+import Home from "../../components/pages/home/Home";
 import Header from '../../components/shared/header/Header';
 import Footer from '../../components/shared/footer/Footer';
 import Medcenter from '../../components/pages/medcenters/medcenters';

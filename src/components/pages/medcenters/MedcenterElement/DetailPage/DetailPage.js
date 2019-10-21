@@ -125,8 +125,10 @@ export default class DetailPage extends Component {
     componentDidMount() {
         let medcenter_id = this.props.match.params.id;
         this.setState({
-            id: medcenter_id
+            // id: medcenter_id
+            medcenter: this.state.medcenters[medcenter_id - 1]
         });
+        console.log(this.medcenter);
         console.log(medcenter_id)
     }
     render() {
