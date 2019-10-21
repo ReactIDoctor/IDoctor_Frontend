@@ -22,7 +22,7 @@ export default class MedcenterElement extends Component{
     componentDidMount() {
         // console.log(this.props);
         this.setState({medcenter: this.props.medcenter });
-        console.log(this.state.medcenter);
+        // console.log(this.state.medcenter);
     }
     componentDidUpdate(prevProps){
         // to avoid infinite loop, set state in condition
@@ -80,7 +80,7 @@ export default class MedcenterElement extends Component{
                 <div className="profile--additional">
                     <div className="profile--additional__block">
                         <div onClick={this.openDetailPage}className="profile--additional_ __price">
-                            <Link to={'/'+medcenter.id}>
+                            <Link to={'/medcenter/'+medcenter.id}>
                                 <div  className="profile--additional__title price__title" >
                                     Подробнее
                                 </div>

@@ -2,7 +2,6 @@ import React from 'react';
 import './ArticleCard.scss'
 
 
-
 export default function ArticleCard(props) {
         const {article} = props;
 

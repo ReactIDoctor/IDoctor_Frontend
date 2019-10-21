@@ -120,8 +120,7 @@ export default class DetailPage extends Component {
             }
         ]
     }
-    medcenter = this.state.medcenters[this.props.match.params.slug-1]
-
+    medcenter = this.state.medcenters[this.props.match.params.id-1]
     componentDidMount() {
 
         // console.log(this.medcenter);

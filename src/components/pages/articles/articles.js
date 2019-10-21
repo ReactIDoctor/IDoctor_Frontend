@@ -4,8 +4,6 @@ import '../medcenters/medcenters.scss'
 import ArticleCard from "./ArticleCard/ArticleCard";
 
 import { connect } from "react-redux";
-// import { getArticles } from "../../../store/actions/articles.actions";
-
 
 class Articles extends Component {
 
@@ -56,7 +54,7 @@ class Articles extends Component {
 
     componentDidMount(){
         // const {articles} = this.state;
-        this.props.getArticles();
+        // this.props.getArticles();
     }
 
     componentWillMount(){
@@ -93,7 +91,7 @@ class Articles extends Component {
 }
 
 const mapStateToProps = (state) => ({
-    articles: state.articles.getArticles,
+    articles: state.articles.articles,
   })
   
   
