@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
 import './doctors.scss';
-import '../medcenters/medcenters.scss'
+import '../medcenters/medcenters.scss';
 import DoctortElement from "../doctors/DoctorElement/DoctorElement"
+import { connect } from "react-redux";
 
-export default class Doctors extends Component {
+class Doctors extends Component {
 
     state = {
         doctors:[
@@ -97,7 +98,7 @@ export default class Doctors extends Component {
                 <div className="breadcrumbs">
                     <a href="/" className="breadcrumbs-item">Главная/</a>
                     <a href="/doctors" className="breadcrumbs-item">Врачи в Алматы/</a>
-                    <div className="breadcrumbs-item bold">Врачи-специалисты в Алматы </div>
+                    <div className="breadcrumbs-item bold"></div>
                 </div>
 
                 <div className="main doctor-main">
@@ -141,7 +142,6 @@ export default class Doctors extends Component {
                                 doctors.map((doctor ,index)=> (
                                     <DoctortElement
                                         key={index}
-                                        index={index}
                                         doctor={doctor}
                                     />
                                 ))
@@ -153,3 +153,12 @@ export default class Doctors extends Component {
         )
     }
 }
+
+const mapStateToProps = (state) => ({
+    doctors: state.doctors.doctors,
+  })
+  
+  
+  export default connect(
+    mapStateToProps,
+  )(Doctors);

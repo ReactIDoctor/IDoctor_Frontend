@@ -2,10 +2,13 @@ import React, {Component} from 'react';
 import './RegistrationLayout.scss'
 import './../login/LoginLayout.scss';
 
+import { connect } from "react-redux";
+import { authorize } from "../../store/actions/auth.actions";
+
 import desktop from "../../assets/images/desktop.png";
 import auth_img from "../../assets/images/auth_img.png";
 
-export default class RegistrationLayout extends Component{
+class RegistrationLayout extends Component{
     state = {
         name: null,
         phone: null,
@@ -86,3 +89,9 @@ export default class RegistrationLayout extends Component{
         );
     }
 }
+
+
+export default connect(
+    null,
+    { authorize }
+  )(RegistrationLayout);

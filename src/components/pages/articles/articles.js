@@ -3,10 +3,14 @@ import './articles.scss';
 import '../medcenters/medcenters.scss'
 import ArticleCard from "./ArticleCard/ArticleCard";
 
+import { connect } from "react-redux";
+// import { getArticles } from "../../../store/actions/articles.actions";
 
-export default class Articles extends Component {
-    render() {
-        let information = [
+
+class Articles extends Component {
+
+    state = {
+        articles:[
             {
                 img: "https://idoctor.kz/manager/images/optimized/66ab2ae3244c7798fa09321a6f3e29bd_540x320-q-85.jpg",
                 title: "Как снизить вероятность рака?",
@@ -47,8 +51,12 @@ export default class Articles extends Component {
                 title: "5 поликлиник Алматы с устаревшим оборудованием",
                 date: "28 АВГ 2019"
             }
-
         ]
+    }
+    
+    render() {
+        const {articles} = this.state;
+
         return (
             <div className="Articles">
                 <div className="breadcrumbs">
@@ -60,10 +68,9 @@ export default class Articles extends Component {
                 </div>
                 <div className="article--card">
                     {
-                        information.map((article,index)=>
+                        articles.map((article,index)=>
                             <ArticleCard
                                 key={index}
-                                index={index}
                                 article={article}
                             />
                         )
@@ -73,3 +80,12 @@ export default class Articles extends Component {
         )
     }
 }
+
+const mapStateToProps = (state) => ({
+    articles: state.articles.articles,
+  })
+  
+  
+  export default connect(
+    mapStateToProps,
+  )(Articles);
