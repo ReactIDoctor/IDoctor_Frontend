@@ -20,8 +20,6 @@ const configureStore = () => {
   const store = createStore(
     rootReducer,
     applyMiddleware(...middlewares));
-
-    
   return store;
 };
 

@@ -126,7 +126,7 @@ export default class DetailPage extends Component {
         this.setState({
             medcenter: this.state.medcenters[medcenter_id-1]
         });
-        console.log(this.state.medcenter)
+        console.log(this.props)
     }
     render() {
         const {medcenter} = this;

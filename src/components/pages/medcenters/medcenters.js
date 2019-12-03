@@ -5,8 +5,12 @@ import MedcenterElement from "./MedcenterElement/MedcenterElement";
 import {connect} from "react-redux";
 
 class Medcenter extends Component{
+    componentDidMount() {
+        // const {medcenters} = this.props;
+    }
 
     render() {
+
 
         let {medcenters} = this.props;
 
