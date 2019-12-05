@@ -8,6 +8,7 @@ import Medcenter from '../../components/pages/medcenters/medcenters';
 import Doctors from "../../components/pages/doctors/doctors";
 import Articles from "../../components/pages/articles/articles";
 import DetailPage from "../../components/pages/medcenters/MedcenterElement/DetailPage/DetailPage";
+import Profile from "../../app/profile/index";
 
 export default function MainLayout(){
     return(
@@ -19,7 +20,8 @@ export default function MainLayout(){
                     <Route path="/articles" component={Articles} />
                     <Route path="/doctors" component={Doctors} />
                     <Route path="/medcenter/:id" component={DetailPage} />
-                    <Route path="/articles" component={Articles}/>
+                    <Route path="/articles" component={Articles} />
+                    <Route path="/profile" component={Profile} />
                     <Route path="/" component={Home} />
 
                 </Switch>

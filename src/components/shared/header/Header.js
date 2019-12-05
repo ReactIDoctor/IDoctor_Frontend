@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Header.scss';
 import {NavLink} from 'react-router-dom';
 
 import logo from "../../../assets/images/logo.svg";
 
 export default function Header(){
+    const [auth, setAuth] = useState(false);
+
     return(
         <div className="Header">
           <div className="header-contain">
@@ -28,7 +30,7 @@ export default function Header(){
                   <p className="main-link">РЕГИСТРАЦИЯ</p>
                 </NavLink>
                 <NavLink className="Header__link" to="/auth">
-                  <button className="login">ВОЙТИ</button>
+                  <button className="login"> {auth ? 'ПРОФИЛЬ' : 'ВОЙТИ'} </button>
                 </NavLink>
             </div>
           </div>

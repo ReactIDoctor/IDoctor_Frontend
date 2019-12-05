@@ -26,7 +26,7 @@ class Doctors extends Component {
                                 <input type="text" placeholder="Поиск..." className="search--filters__item-input"/>
                             </div>
                         </div>
-                        <div className="card">
+                            <div className="card">
                             <div className="search--filters__item">
                                 <div className="search--filters__item-title">По стоимости приема:</div>
                                 <div className="search--filters__item-body">

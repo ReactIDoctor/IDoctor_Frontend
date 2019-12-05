@@ -3,25 +3,29 @@ export const AUTH = "AUTH";
 export const LOGIN = 'LOGIN';
 
 
-export const login = response => dispatch => {
+
+export const login = (phone,password) => dispatch => {
+    localStorage.setItem("access_token", `${phone}:${password}`);
+
     dispatch({
         type: LOGIN,
-        payload: response.data
+        payload: phone
     });
 };
   
-export const logout = response => dispatch => {
+export const logout = (phone,password) => dispatch => {
     dispatch({
         type: LOG_OUT,
-        payload: response.data
+        payload: ""
     });
 };
   
-export const authorize = response => dispatch => {
-  
+export const authorize = (phone,password) => dispatch => {
+    localStorage.setItem("access_token", `${phone}:${password}`);
+
     dispatch({
       type: AUTH,
-      payload: response.data
+      payload: phone
     });
 };
   

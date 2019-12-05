@@ -9,7 +9,7 @@ export default function DoctorElement(props){
 
         return (
             <div className="DoctorElement">
-                <div className="profile doctor-profile">
+                <div className="profile_ doctor-profile">
                     <div className="profile--left">
                         <div className="logo">
                             <img className="logo-image" src={doctor.img} alt="Doctor" />

@@ -37,7 +37,7 @@ export default class MedcenterElement extends Component{
         return(
 
             <div className="MedcenterElement">
-                <div className="profile">
+                <div className="profile_">
                     <div className="profile--left">
                         <div className="logo">
                             <img className="logo-image" src={medcenter.img} alt="GasrtoClinic" />
