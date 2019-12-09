@@ -5,7 +5,7 @@ import {NavLink} from 'react-router-dom';
 import logo from "../../../assets/images/logo.svg";
 
 export default function Header(){
-    const [auth, setAuth] = useState(false);
+    const [auth, ] = useState(false);
 
     return(
         <div className="Header">

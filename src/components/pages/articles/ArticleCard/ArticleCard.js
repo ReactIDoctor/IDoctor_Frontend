@@ -7,9 +7,9 @@ export default function ArticleCard(props) {
 
         return(
             <div className="ArticleCard">
-                <div className="article-image"><img className="img-logo" src={article.img} alt="" /></div>
+                {/* <div className="article-image"><img className="img-logo" src={article.img} alt="" /></div> */}
                 <div className="article--title"><div className="title--item">{article.title}</div></div>
-                <div className="article--date"> {article.date}</div>
+                <div className="article--date"> {article.text}</div>
             </div>
         )
 }
